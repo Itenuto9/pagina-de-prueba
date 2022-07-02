@@ -285,9 +285,10 @@ border-radius: 20px;
 background: rosybrown;
 }
 
-@media screen and (min-width: 720px)
+@media screen and (min-width: 388px)
 {
 	#estructura {
-		grid-template-columns: repeat(4, 1fr);
+		display: flex
+			flex-direction: column
 	}
 }
