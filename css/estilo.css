@@ -290,7 +290,17 @@ background: rosybrown;
 @media screen and (min-width: 388px)
 {
 	#estructura {
-		display: flex
-			flex-direction: column
+	display: grid;
+	grid-template-areas: 
+	"trailers trailers ultimasNovedades"
+	"video video ultimasNovedades"
+	"aside aside ultimasNovedades"
+	"footer footer footer"
+	;
+	grid-template-rows: 5% auto 20% 20% 20% ;
+	grid-template-columns: 100%;
+	grid-column-gap: 10px;
+	grid-row-gap: 2px;
+	
 	}
 }
