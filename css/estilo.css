@@ -1,0 +1,293 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: rgb(128, 206, 215);
+	font-family: 'calibri';
+}
+
+header {
+background: rgb(0, 126, 167);
+width: 100%;
+clear: both;
+content: '';
+display: table;
+}
+
+
+.menu{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 130px;
+	height: 60px;
+	float: left;
+	padding: 8px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul li {
+	list-style: none;
+	margin-left: 75px ;
+	padding: 12px 0;
+	float: left;
+	font-weight: bold;
+	color: black;
+	position: relative;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+
+
+footer {
+	margin-top: 350px;
+    background: rgb(0, 126, 167);
+    width: 100%;
+clear: both;
+content: '';
+display: table;
+padding: 20px;
+text-align: center;
+}
+
+
+
+
+.tops{
+	text-align: center;
+}
+
+.mejores {
+	border-radius: 360px;
+	margin-left: 10px;
+}
+.listmej {
+	margin-left: 300px;
+	background: rgb(0, 50, 73);
+	margin-right: 650px;
+	border-radius: 10px;
+	padding: 10px;
+	list-style: none;
+	color: white;
+
+}
+
+.titlepeor {
+	
+	padding: 10px;
+}
+
+.peores {
+	border-radius: 360px;
+	
+
+}
+
+.listpeo {
+	
+	margin-left: 300px;
+	background: rgb(0, 50, 73);
+	margin-right: 650px;
+	border-radius: 10px;
+	padding: 10px;
+	list-style: none;
+	color: white;
+}
+
+
+.estrella{
+	width: 300px;
+	margin-top: 70px;
+	float: right;
+}
+
+
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:white;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:black;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    background: #666666;
+}
+
+
+
+
+
+//
+
+
+#{
+	padding: 0;
+	margin: 10px;
+}
+
+#estructura{
+	display: grid;
+	grid-template-areas: 
+	"trailers trailers ultimasNovedades"
+	"video video ultimasNovedades"
+	"aside aside ultimasNovedades"
+	"footer footer footer"
+	;
+	grid-template-rows: 7% auto 20% 20% ;
+	grid-template-columns: 20% auto 15%;
+	grid-column-gap: 10px;
+	grid-row-gap: 2px;
+}
+
+footer{
+	grid-area: footer;
+}
+
+aside#sinopsis {
+	grid-area: aside;
+	background: yellow;
+	margin-left: 50px;
+
+	padding: 15px;
+	width: 70%;
+	border-radius: 7%;
+
+}
+
+section#ultimasNovedades{
+	grid-area: ultimasNovedades;
+	background: orange;
+	margin: 10px;
+	padding: 5%;
+	border-radius: 10%;
+}
+
+section#video{
+	grid-area: video;
+	margin: 5%;
+
+
+
+
+}
+
+section#trailers{
+	grid-area: trailers;
+	background: rgb(0, 126, 167);
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.border{
+	
+}
+
+
+#peliculas{
+	display: grid;
+	grid-template-areas: 
+	"estrenos none"
+	"peliculaUno peliculaUno"
+	"peliculaDos peliculaDos"
+	"peliculaTres peliculaTres"
+	"peliculaCuatro peliculaCuatro";
+
+	grid-template-rows: auto ;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+margin: 30px;
+
+
+
+}
+
+section#estrenos{
+grid-area: estrenos;
+background: rgb(0, 126, 167);
+margin-top: 10px;
+}
+
+section#peliculaUno {
+
+grid-area: peliculaUno;
+background: darkorange;
+display: flex;
+flex-direction: row;
+width: 65%;
+padding: 2%;
+border-radius: 20px;
+
+}
+
+section#peliculaDos{
+grid-area: peliculaDos;
+display: flex;
+flex-direction: row;
+width: 65%;
+padding: 2%;
+border-radius: 20px;
+background: dodgerblue;
+}
+
+section#peliculaTres{
+grid-area: peliculaTres;
+display: flex;
+flex-direction: row;
+width: 65%;
+padding: 2%;
+border-radius: 20px;
+background: seagreen;
+}
+
+section#peliculaCuatro{
+grid-area: peliculaCuatro;
+display: flex;
+flex-direction: row;
+width: 65%;
+padding: 2%;
+border-radius: 20px;
+background: rosybrown;
+}
+
+@media screen and (min-width: 720px)
+{
+	#estructura {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
